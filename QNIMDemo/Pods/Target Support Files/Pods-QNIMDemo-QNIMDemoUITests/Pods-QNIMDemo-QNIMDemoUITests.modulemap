@@ -1,0 +1,6 @@
+framework module Pods_QNIMDemo_QNIMDemoUITests {
+  umbrella header "Pods-QNIMDemo-QNIMDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

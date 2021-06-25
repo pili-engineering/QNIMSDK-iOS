@@ -1,0 +1,1009 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4619D349A23543F63BC06456 /* Pods_QNIMDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF01A90A6ACE16339DBE9D1 /* Pods_QNIMDemoTests.framework */; };
+		776733D42665EBB7006AC9F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 776733D32665EBB7006AC9F7 /* AppDelegate.m */; };
+		776733D72665EBB7006AC9F7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 776733D62665EBB7006AC9F7 /* SceneDelegate.m */; };
+		776733DA2665EBB7006AC9F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776733D92665EBB7006AC9F7 /* ViewController.m */; };
+		776733DD2665EBB7006AC9F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776733DB2665EBB7006AC9F7 /* Main.storyboard */; };
+		776733DF2665EBB9006AC9F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776733DE2665EBB9006AC9F7 /* Assets.xcassets */; };
+		776733E22665EBB9006AC9F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776733E02665EBB9006AC9F7 /* LaunchScreen.storyboard */; };
+		776733E52665EBB9006AC9F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 776733E42665EBB9006AC9F7 /* main.m */; };
+		776733EF2665EBBA006AC9F7 /* QNIMDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 776733EE2665EBBA006AC9F7 /* QNIMDemoTests.m */; };
+		776733FA2665EBBA006AC9F7 /* QNIMDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 776733F92665EBBA006AC9F7 /* QNIMDemoUITests.m */; };
+		7767355426672282006AC9F7 /* QNRTCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7767355326672282006AC9F7 /* QNRTCBaseViewController.m */; };
+		7767358626675481006AC9F7 /* QNRoomUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7767358126675481006AC9F7 /* QNRoomUserView.m */; };
+		7767358B2667553F006AC9F7 /* MBProgressHUD+QNShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7767358A2667553F006AC9F7 /* MBProgressHUD+QNShow.m */; };
+		776735B526676090006AC9F7 /* QNNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 776735B426676090006AC9F7 /* QNNetworkUtil.m */; };
+		7767362F2668C841006AC9F7 /* QNEmojiCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776735EB2668C841006AC9F7 /* QNEmojiCollectionCell.m */; };
+		776736372668C841006AC9F7 /* QNTextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776735FD2668C841006AC9F7 /* QNTextMessageCell.m */; };
+		776736382668C841006AC9F7 /* QNMessageBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776735FE2668C841006AC9F7 /* QNMessageBaseCell.m */; };
+		776736412668C841006AC9F7 /* QNUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 776736152668C841006AC9F7 /* QNUtilities.m */; };
+		776736572668CB1E006AC9F7 /* QNChatRoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776736562668CB1E006AC9F7 /* QNChatRoomView.m */; };
+		7767365E2668CBA4006AC9F7 /* QNInputBarControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7767365D2668CBA4006AC9F7 /* QNInputBarControl.m */; };
+		776736642668CC5E006AC9F7 /* QNEmojiBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776736632668CC5E006AC9F7 /* QNEmojiBoardView.m */; };
+		776736702668CEAB006AC9F7 /* QNInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7767366F2668CEAB006AC9F7 /* QNInputView.m */; };
+		7767389A266F6EC9006AC9F7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7767385F266F6BC2006AC9F7 /* CoreTelephony.framework */; };
+		7767389C266F6ED9006AC9F7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7767389B266F6ED9006AC9F7 /* libsqlite3.tbd */; };
+		776738A0266F6EE5006AC9F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7767389F266F6EE4006AC9F7 /* UIKit.framework */; };
+		776738A2266F6EF3006AC9F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738A1266F6EF3006AC9F7 /* QuartzCore.framework */; };
+		776738A4266F6EFD006AC9F7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738A3266F6EFD006AC9F7 /* ImageIO.framework */; };
+		776738A6266F6F07006AC9F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738A5266F6F07006AC9F7 /* Foundation.framework */; };
+		776738A8266F6F13006AC9F7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738A7266F6F12006AC9F7 /* CoreVideo.framework */; };
+		776738AA266F6F47006AC9F7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738A9266F6F47006AC9F7 /* CoreMedia.framework */; };
+		776738AC266F6F51006AC9F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738AB266F6F51006AC9F7 /* CoreGraphics.framework */; };
+		776738AE266F6F5B006AC9F7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738AD266F6F5B006AC9F7 /* AVFoundation.framework */; };
+		776738B0266F6F65006AC9F7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738AF266F6F65006AC9F7 /* UserNotifications.framework */; };
+		776738B2266F6F6B006AC9F7 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738B1266F6F6B006AC9F7 /* UserNotificationsUI.framework */; };
+		776738B4266F6F78006AC9F7 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738B3266F6F78006AC9F7 /* libresolv.tbd */; };
+		776738B8266F6F83006AC9F7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738B7266F6F82006AC9F7 /* libz.tbd */; };
+		776738BC266F6F92006AC9F7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738BB266F6F92006AC9F7 /* libc++.tbd */; };
+		776738C0266F6FB2006AC9F7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738BF266F6FB2006AC9F7 /* AssetsLibrary.framework */; };
+		776738C2266F6FBC006AC9F7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738C1266F6FBC006AC9F7 /* CoreFoundation.framework */; };
+		776738F0266F7495006AC9F7 /* Pods_QNIMDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7B3A59711A544E8E972671 /* Pods_QNIMDemo.framework */; };
+		776B66F72685C3C000CBB77B /* QNIMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776B66F32685C36D00CBB77B /* QNIMSDK.framework */; };
+		776B66F82685C3C000CBB77B /* QNIMSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 776B66F32685C36D00CBB77B /* QNIMSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		777B31D9267B080400B6D52F /* QNMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777B31D8267B080400B6D52F /* QNMainViewController.m */; };
+		777B31E5267B229800B6D52F /* QNCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 777B31E3267B229800B6D52F /* QNCountdownButton.m */; };
+		777B31EA267B240700B6D52F /* QNLoginInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 777B31E9267B240700B6D52F /* QNLoginInfoModel.m */; };
+		88C58BCF0244A038B0CDE6CF /* Pods_QNIMDemo_QNIMDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E406712E7276C4BFEC4321 /* Pods_QNIMDemo_QNIMDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		776733EB2665EBBA006AC9F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 776733C72665EBB7006AC9F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 776733CE2665EBB7006AC9F7;
+			remoteInfo = QNIMDemo;
+		};
+		776733F62665EBBA006AC9F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 776733C72665EBB7006AC9F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 776733CE2665EBB7006AC9F7;
+			remoteInfo = QNIMDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77673895266F6E8D006AC9F7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				776B66F82685C3C000CBB77B /* QNIMSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D4BAAE10D3DF1C58B4D1EEB /* Pods-QNIMDemo-QNIMDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNIMDemo-QNIMDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-QNIMDemo-QNIMDemoUITests/Pods-QNIMDemo-QNIMDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6DF8B4A29D2CE91BEA02813A /* Pods-QNIMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNIMDemo.release.xcconfig"; path = "Target Support Files/Pods-QNIMDemo/Pods-QNIMDemo.release.xcconfig"; sourceTree = "<group>"; };
+		71E406712E7276C4BFEC4321 /* Pods_QNIMDemo_QNIMDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QNIMDemo_QNIMDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		776733CF2665EBB7006AC9F7 /* QNIMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QNIMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		776733D22665EBB7006AC9F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		776733D32665EBB7006AC9F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		776733D52665EBB7006AC9F7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		776733D62665EBB7006AC9F7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		776733D82665EBB7006AC9F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		776733D92665EBB7006AC9F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		776733DC2665EBB7006AC9F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		776733DE2665EBB9006AC9F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		776733E12665EBB9006AC9F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		776733E32665EBB9006AC9F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776733E42665EBB9006AC9F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		776733EA2665EBBA006AC9F7 /* QNIMDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QNIMDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		776733EE2665EBBA006AC9F7 /* QNIMDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNIMDemoTests.m; sourceTree = "<group>"; };
+		776733F02665EBBA006AC9F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776733F52665EBBA006AC9F7 /* QNIMDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QNIMDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		776733F92665EBBA006AC9F7 /* QNIMDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNIMDemoUITests.m; sourceTree = "<group>"; };
+		776733FB2665EBBA006AC9F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7767354F26672282006AC9F7 /* QNRTCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNRTCBaseViewController.h; sourceTree = "<group>"; };
+		7767355326672282006AC9F7 /* QNRTCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNRTCBaseViewController.m; sourceTree = "<group>"; };
+		7767358126675481006AC9F7 /* QNRoomUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNRoomUserView.m; sourceTree = "<group>"; };
+		7767358526675481006AC9F7 /* QNRoomUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNRoomUserView.h; sourceTree = "<group>"; };
+		776735892667553F006AC9F7 /* MBProgressHUD+QNShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+QNShow.h"; sourceTree = "<group>"; };
+		7767358A2667553F006AC9F7 /* MBProgressHUD+QNShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+QNShow.m"; sourceTree = "<group>"; };
+		776735B326676090006AC9F7 /* QNNetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNNetworkUtil.h; sourceTree = "<group>"; };
+		776735B426676090006AC9F7 /* QNNetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNNetworkUtil.m; sourceTree = "<group>"; };
+		776735EB2668C841006AC9F7 /* QNEmojiCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNEmojiCollectionCell.m; sourceTree = "<group>"; };
+		776735EC2668C841006AC9F7 /* QNEmojiCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNEmojiCollectionCell.h; sourceTree = "<group>"; };
+		776735FD2668C841006AC9F7 /* QNTextMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNTextMessageCell.m; sourceTree = "<group>"; };
+		776735FE2668C841006AC9F7 /* QNMessageBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNMessageBaseCell.m; sourceTree = "<group>"; };
+		776735FF2668C841006AC9F7 /* QNTextMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNTextMessageCell.h; sourceTree = "<group>"; };
+		776736002668C841006AC9F7 /* QNMessageBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNMessageBaseCell.h; sourceTree = "<group>"; };
+		776736142668C841006AC9F7 /* QNUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUtilities.h; sourceTree = "<group>"; };
+		776736152668C841006AC9F7 /* QNUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUtilities.m; sourceTree = "<group>"; };
+		776736552668CB1E006AC9F7 /* QNChatRoomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNChatRoomView.h; sourceTree = "<group>"; };
+		776736562668CB1E006AC9F7 /* QNChatRoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNChatRoomView.m; sourceTree = "<group>"; };
+		7767365C2668CBA4006AC9F7 /* QNInputBarControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNInputBarControl.h; sourceTree = "<group>"; };
+		7767365D2668CBA4006AC9F7 /* QNInputBarControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNInputBarControl.m; sourceTree = "<group>"; };
+		776736622668CC5E006AC9F7 /* QNEmojiBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNEmojiBoardView.h; sourceTree = "<group>"; };
+		776736632668CC5E006AC9F7 /* QNEmojiBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNEmojiBoardView.m; sourceTree = "<group>"; };
+		7767366E2668CEAB006AC9F7 /* QNInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNInputView.h; sourceTree = "<group>"; };
+		7767366F2668CEAB006AC9F7 /* QNInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNInputView.m; sourceTree = "<group>"; };
+		7767385F266F6BC2006AC9F7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		7767389B266F6ED9006AC9F7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7767389F266F6EE4006AC9F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		776738A1266F6EF3006AC9F7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		776738A3266F6EFD006AC9F7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		776738A5266F6F07006AC9F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		776738A7266F6F12006AC9F7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		776738A9266F6F47006AC9F7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		776738AB266F6F51006AC9F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		776738AD266F6F5B006AC9F7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		776738AF266F6F65006AC9F7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		776738B1266F6F6B006AC9F7 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		776738B3266F6F78006AC9F7 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		776738B7266F6F82006AC9F7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		776738BB266F6F92006AC9F7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		776738BF266F6FB2006AC9F7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		776738C1266F6FBC006AC9F7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		776B66F32685C36D00CBB77B /* QNIMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QNIMSDK.framework; sourceTree = "<group>"; };
+		777B31D7267B080400B6D52F /* QNMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNMainViewController.h; sourceTree = "<group>"; };
+		777B31D8267B080400B6D52F /* QNMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNMainViewController.m; sourceTree = "<group>"; };
+		777B31E3267B229800B6D52F /* QNCountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNCountdownButton.m; sourceTree = "<group>"; };
+		777B31E4267B229800B6D52F /* QNCountdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNCountdownButton.h; sourceTree = "<group>"; };
+		777B31E8267B240700B6D52F /* QNLoginInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNLoginInfoModel.h; sourceTree = "<group>"; };
+		777B31E9267B240700B6D52F /* QNLoginInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNLoginInfoModel.m; sourceTree = "<group>"; };
+		CFE572B57728A6872A4774AD /* Pods-QNIMDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNIMDemoTests.release.xcconfig"; path = "Target Support Files/Pods-QNIMDemoTests/Pods-QNIMDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA546D396EDDBA95760FC8AF /* Pods-QNIMDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNIMDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-QNIMDemoTests/Pods-QNIMDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDF01A90A6ACE16339DBE9D1 /* Pods_QNIMDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QNIMDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2F4A8058A731F9F9CB55C8 /* Pods-QNIMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNIMDemo.debug.xcconfig"; path = "Target Support Files/Pods-QNIMDemo/Pods-QNIMDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F190BA2E9F6B58054BD8EA7E /* Pods-QNIMDemo-QNIMDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNIMDemo-QNIMDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-QNIMDemo-QNIMDemoUITests/Pods-QNIMDemo-QNIMDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA7B3A59711A544E8E972671 /* Pods_QNIMDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QNIMDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		776733CC2665EBB7006AC9F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776738C2266F6FBC006AC9F7 /* CoreFoundation.framework in Frameworks */,
+				776B66F72685C3C000CBB77B /* QNIMSDK.framework in Frameworks */,
+				776738C0266F6FB2006AC9F7 /* AssetsLibrary.framework in Frameworks */,
+				776738BC266F6F92006AC9F7 /* libc++.tbd in Frameworks */,
+				776738B8266F6F83006AC9F7 /* libz.tbd in Frameworks */,
+				776738B4266F6F78006AC9F7 /* libresolv.tbd in Frameworks */,
+				776738B2266F6F6B006AC9F7 /* UserNotificationsUI.framework in Frameworks */,
+				776738B0266F6F65006AC9F7 /* UserNotifications.framework in Frameworks */,
+				776738AE266F6F5B006AC9F7 /* AVFoundation.framework in Frameworks */,
+				776738AC266F6F51006AC9F7 /* CoreGraphics.framework in Frameworks */,
+				776738F0266F7495006AC9F7 /* Pods_QNIMDemo.framework in Frameworks */,
+				776738AA266F6F47006AC9F7 /* CoreMedia.framework in Frameworks */,
+				776738A8266F6F13006AC9F7 /* CoreVideo.framework in Frameworks */,
+				776738A6266F6F07006AC9F7 /* Foundation.framework in Frameworks */,
+				776738A4266F6EFD006AC9F7 /* ImageIO.framework in Frameworks */,
+				776738A2266F6EF3006AC9F7 /* QuartzCore.framework in Frameworks */,
+				776738A0266F6EE5006AC9F7 /* UIKit.framework in Frameworks */,
+				7767389C266F6ED9006AC9F7 /* libsqlite3.tbd in Frameworks */,
+				7767389A266F6EC9006AC9F7 /* CoreTelephony.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776733E72665EBBA006AC9F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4619D349A23543F63BC06456 /* Pods_QNIMDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776733F22665EBBA006AC9F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C58BCF0244A038B0CDE6CF /* Pods_QNIMDemo_QNIMDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		776733C62665EBB7006AC9F7 = {
+			isa = PBXGroup;
+			children = (
+				776733D12665EBB7006AC9F7 /* QNIMDemo */,
+				776733ED2665EBBA006AC9F7 /* QNIMDemoTests */,
+				776733F82665EBBA006AC9F7 /* QNIMDemoUITests */,
+				776733D02665EBB7006AC9F7 /* Products */,
+				776734C6266618CB006AC9F7 /* Frameworks */,
+				7D2BAD22DF1948A43A6192BD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		776733D02665EBB7006AC9F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				776733CF2665EBB7006AC9F7 /* QNIMDemo.app */,
+				776733EA2665EBBA006AC9F7 /* QNIMDemoTests.xctest */,
+				776733F52665EBBA006AC9F7 /* QNIMDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		776733D12665EBB7006AC9F7 /* QNIMDemo */ = {
+			isa = PBXGroup;
+			children = (
+				776736542668CAEE006AC9F7 /* QNChatRoom */,
+				776733D22665EBB7006AC9F7 /* AppDelegate.h */,
+				776733D32665EBB7006AC9F7 /* AppDelegate.m */,
+				776B66F32685C36D00CBB77B /* QNIMSDK.framework */,
+				776733D52665EBB7006AC9F7 /* SceneDelegate.h */,
+				776733D62665EBB7006AC9F7 /* SceneDelegate.m */,
+				776735B326676090006AC9F7 /* QNNetworkUtil.h */,
+				776735B426676090006AC9F7 /* QNNetworkUtil.m */,
+				7767358526675481006AC9F7 /* QNRoomUserView.h */,
+				7767358126675481006AC9F7 /* QNRoomUserView.m */,
+				776735892667553F006AC9F7 /* MBProgressHUD+QNShow.h */,
+				7767358A2667553F006AC9F7 /* MBProgressHUD+QNShow.m */,
+				7767354F26672282006AC9F7 /* QNRTCBaseViewController.h */,
+				7767355326672282006AC9F7 /* QNRTCBaseViewController.m */,
+				776733D82665EBB7006AC9F7 /* ViewController.h */,
+				776733D92665EBB7006AC9F7 /* ViewController.m */,
+				777B31E8267B240700B6D52F /* QNLoginInfoModel.h */,
+				777B31E9267B240700B6D52F /* QNLoginInfoModel.m */,
+				777B31E4267B229800B6D52F /* QNCountdownButton.h */,
+				777B31E3267B229800B6D52F /* QNCountdownButton.m */,
+				777B31D7267B080400B6D52F /* QNMainViewController.h */,
+				777B31D8267B080400B6D52F /* QNMainViewController.m */,
+				776733DB2665EBB7006AC9F7 /* Main.storyboard */,
+				776733DE2665EBB9006AC9F7 /* Assets.xcassets */,
+				776733E02665EBB9006AC9F7 /* LaunchScreen.storyboard */,
+				776733E32665EBB9006AC9F7 /* Info.plist */,
+				776733E42665EBB9006AC9F7 /* main.m */,
+			);
+			path = QNIMDemo;
+			sourceTree = "<group>";
+		};
+		776733ED2665EBBA006AC9F7 /* QNIMDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				776733EE2665EBBA006AC9F7 /* QNIMDemoTests.m */,
+				776733F02665EBBA006AC9F7 /* Info.plist */,
+			);
+			path = QNIMDemoTests;
+			sourceTree = "<group>";
+		};
+		776733F82665EBBA006AC9F7 /* QNIMDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				776733F92665EBBA006AC9F7 /* QNIMDemoUITests.m */,
+				776733FB2665EBBA006AC9F7 /* Info.plist */,
+			);
+			path = QNIMDemoUITests;
+			sourceTree = "<group>";
+		};
+		776734C6266618CB006AC9F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				776738C1266F6FBC006AC9F7 /* CoreFoundation.framework */,
+				776738BF266F6FB2006AC9F7 /* AssetsLibrary.framework */,
+				776738BB266F6F92006AC9F7 /* libc++.tbd */,
+				776738B7266F6F82006AC9F7 /* libz.tbd */,
+				776738B3266F6F78006AC9F7 /* libresolv.tbd */,
+				776738B1266F6F6B006AC9F7 /* UserNotificationsUI.framework */,
+				776738AF266F6F65006AC9F7 /* UserNotifications.framework */,
+				776738AD266F6F5B006AC9F7 /* AVFoundation.framework */,
+				776738AB266F6F51006AC9F7 /* CoreGraphics.framework */,
+				776738A9266F6F47006AC9F7 /* CoreMedia.framework */,
+				776738A7266F6F12006AC9F7 /* CoreVideo.framework */,
+				776738A5266F6F07006AC9F7 /* Foundation.framework */,
+				776738A3266F6EFD006AC9F7 /* ImageIO.framework */,
+				776738A1266F6EF3006AC9F7 /* QuartzCore.framework */,
+				7767389F266F6EE4006AC9F7 /* UIKit.framework */,
+				7767389B266F6ED9006AC9F7 /* libsqlite3.tbd */,
+				7767385F266F6BC2006AC9F7 /* CoreTelephony.framework */,
+				FA7B3A59711A544E8E972671 /* Pods_QNIMDemo.framework */,
+				71E406712E7276C4BFEC4321 /* Pods_QNIMDemo_QNIMDemoUITests.framework */,
+				DDF01A90A6ACE16339DBE9D1 /* Pods_QNIMDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		776735F12668C841006AC9F7 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				776736002668C841006AC9F7 /* QNMessageBaseCell.h */,
+				776735FE2668C841006AC9F7 /* QNMessageBaseCell.m */,
+				776735FF2668C841006AC9F7 /* QNTextMessageCell.h */,
+				776735FD2668C841006AC9F7 /* QNTextMessageCell.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		776736132668C841006AC9F7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				776736142668C841006AC9F7 /* QNUtilities.h */,
+				776736152668C841006AC9F7 /* QNUtilities.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		776736542668CAEE006AC9F7 /* QNChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				776736552668CB1E006AC9F7 /* QNChatRoomView.h */,
+				776736562668CB1E006AC9F7 /* QNChatRoomView.m */,
+				776736612668CC26006AC9F7 /* inputBar */,
+				776735F12668C841006AC9F7 /* Message */,
+				776736132668C841006AC9F7 /* Utilities */,
+			);
+			path = QNChatRoom;
+			sourceTree = "<group>";
+		};
+		776736612668CC26006AC9F7 /* inputBar */ = {
+			isa = PBXGroup;
+			children = (
+				7767366E2668CEAB006AC9F7 /* QNInputView.h */,
+				7767366F2668CEAB006AC9F7 /* QNInputView.m */,
+				776736622668CC5E006AC9F7 /* QNEmojiBoardView.h */,
+				776736632668CC5E006AC9F7 /* QNEmojiBoardView.m */,
+				7767365C2668CBA4006AC9F7 /* QNInputBarControl.h */,
+				7767365D2668CBA4006AC9F7 /* QNInputBarControl.m */,
+				776735EC2668C841006AC9F7 /* QNEmojiCollectionCell.h */,
+				776735EB2668C841006AC9F7 /* QNEmojiCollectionCell.m */,
+			);
+			path = inputBar;
+			sourceTree = "<group>";
+		};
+		7D2BAD22DF1948A43A6192BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F4A8058A731F9F9CB55C8 /* Pods-QNIMDemo.debug.xcconfig */,
+				6DF8B4A29D2CE91BEA02813A /* Pods-QNIMDemo.release.xcconfig */,
+				F190BA2E9F6B58054BD8EA7E /* Pods-QNIMDemo-QNIMDemoUITests.debug.xcconfig */,
+				0D4BAAE10D3DF1C58B4D1EEB /* Pods-QNIMDemo-QNIMDemoUITests.release.xcconfig */,
+				DA546D396EDDBA95760FC8AF /* Pods-QNIMDemoTests.debug.xcconfig */,
+				CFE572B57728A6872A4774AD /* Pods-QNIMDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		776733CE2665EBB7006AC9F7 /* QNIMDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776733FE2665EBBA006AC9F7 /* Build configuration list for PBXNativeTarget "QNIMDemo" */;
+			buildPhases = (
+				509D1EA6FA6CFF0A3CA34B0E /* [CP] Check Pods Manifest.lock */,
+				776733CB2665EBB7006AC9F7 /* Sources */,
+				776733CC2665EBB7006AC9F7 /* Frameworks */,
+				776733CD2665EBB7006AC9F7 /* Resources */,
+				6ECB3D1636B77889A8465C85 /* [CP] Embed Pods Frameworks */,
+				77673895266F6E8D006AC9F7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QNIMDemo;
+			productName = QNIMDemo;
+			productReference = 776733CF2665EBB7006AC9F7 /* QNIMDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		776733E92665EBBA006AC9F7 /* QNIMDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776734012665EBBA006AC9F7 /* Build configuration list for PBXNativeTarget "QNIMDemoTests" */;
+			buildPhases = (
+				27A6F346A3AD243FC72FE8FD /* [CP] Check Pods Manifest.lock */,
+				776733E62665EBBA006AC9F7 /* Sources */,
+				776733E72665EBBA006AC9F7 /* Frameworks */,
+				776733E82665EBBA006AC9F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				776733EC2665EBBA006AC9F7 /* PBXTargetDependency */,
+			);
+			name = QNIMDemoTests;
+			productName = QNIMDemoTests;
+			productReference = 776733EA2665EBBA006AC9F7 /* QNIMDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		776733F42665EBBA006AC9F7 /* QNIMDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776734042665EBBA006AC9F7 /* Build configuration list for PBXNativeTarget "QNIMDemoUITests" */;
+			buildPhases = (
+				D8F27ABA6EE62FBB225B0689 /* [CP] Check Pods Manifest.lock */,
+				776733F12665EBBA006AC9F7 /* Sources */,
+				776733F22665EBBA006AC9F7 /* Frameworks */,
+				776733F32665EBBA006AC9F7 /* Resources */,
+				FDBC11C36E8828C3894CB192 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				776733F72665EBBA006AC9F7 /* PBXTargetDependency */,
+			);
+			name = QNIMDemoUITests;
+			productName = QNIMDemoUITests;
+			productReference = 776733F52665EBBA006AC9F7 /* QNIMDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		776733C72665EBB7006AC9F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					776733CE2665EBB7006AC9F7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					776733E92665EBBA006AC9F7 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 776733CE2665EBB7006AC9F7;
+					};
+					776733F42665EBBA006AC9F7 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 776733CE2665EBB7006AC9F7;
+					};
+				};
+			};
+			buildConfigurationList = 776733CA2665EBB7006AC9F7 /* Build configuration list for PBXProject "QNIMDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 776733C62665EBB7006AC9F7;
+			productRefGroup = 776733D02665EBB7006AC9F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				776733CE2665EBB7006AC9F7 /* QNIMDemo */,
+				776733E92665EBBA006AC9F7 /* QNIMDemoTests */,
+				776733F42665EBBA006AC9F7 /* QNIMDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		776733CD2665EBB7006AC9F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776733E22665EBB9006AC9F7 /* LaunchScreen.storyboard in Resources */,
+				776733DF2665EBB9006AC9F7 /* Assets.xcassets in Resources */,
+				776733DD2665EBB7006AC9F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776733E82665EBBA006AC9F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776733F32665EBBA006AC9F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27A6F346A3AD243FC72FE8FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QNIMDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		509D1EA6FA6CFF0A3CA34B0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QNIMDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ECB3D1636B77889A8465C85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QNIMDemo/Pods-QNIMDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QNIMDemo/Pods-QNIMDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QNIMDemo/Pods-QNIMDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8F27ABA6EE62FBB225B0689 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QNIMDemo-QNIMDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDBC11C36E8828C3894CB192 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QNIMDemo-QNIMDemoUITests/Pods-QNIMDemo-QNIMDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QNIMDemo-QNIMDemoUITests/Pods-QNIMDemo-QNIMDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QNIMDemo-QNIMDemoUITests/Pods-QNIMDemo-QNIMDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		776733CB2665EBB7006AC9F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776736572668CB1E006AC9F7 /* QNChatRoomView.m in Sources */,
+				776736372668C841006AC9F7 /* QNTextMessageCell.m in Sources */,
+				776733DA2665EBB7006AC9F7 /* ViewController.m in Sources */,
+				7767362F2668C841006AC9F7 /* QNEmojiCollectionCell.m in Sources */,
+				776735B526676090006AC9F7 /* QNNetworkUtil.m in Sources */,
+				7767358B2667553F006AC9F7 /* MBProgressHUD+QNShow.m in Sources */,
+				776733D42665EBB7006AC9F7 /* AppDelegate.m in Sources */,
+				777B31D9267B080400B6D52F /* QNMainViewController.m in Sources */,
+				776733E52665EBB9006AC9F7 /* main.m in Sources */,
+				776736642668CC5E006AC9F7 /* QNEmojiBoardView.m in Sources */,
+				777B31E5267B229800B6D52F /* QNCountdownButton.m in Sources */,
+				776733D72665EBB7006AC9F7 /* SceneDelegate.m in Sources */,
+				776736412668C841006AC9F7 /* QNUtilities.m in Sources */,
+				7767355426672282006AC9F7 /* QNRTCBaseViewController.m in Sources */,
+				777B31EA267B240700B6D52F /* QNLoginInfoModel.m in Sources */,
+				776736382668C841006AC9F7 /* QNMessageBaseCell.m in Sources */,
+				776736702668CEAB006AC9F7 /* QNInputView.m in Sources */,
+				7767365E2668CBA4006AC9F7 /* QNInputBarControl.m in Sources */,
+				7767358626675481006AC9F7 /* QNRoomUserView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776733E62665EBBA006AC9F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776733EF2665EBBA006AC9F7 /* QNIMDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776733F12665EBBA006AC9F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776733FA2665EBBA006AC9F7 /* QNIMDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		776733EC2665EBBA006AC9F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 776733CE2665EBB7006AC9F7 /* QNIMDemo */;
+			targetProxy = 776733EB2665EBBA006AC9F7 /* PBXContainerItemProxy */;
+		};
+		776733F72665EBBA006AC9F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 776733CE2665EBB7006AC9F7 /* QNIMDemo */;
+			targetProxy = 776733F62665EBBA006AC9F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		776733DB2665EBB7006AC9F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				776733DC2665EBB7006AC9F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		776733E02665EBB9006AC9F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				776733E12665EBB9006AC9F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		776733FC2665EBBA006AC9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		776733FD2665EBBA006AC9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		776733FF2665EBBA006AC9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2F4A8058A731F9F9CB55C8 /* Pods-QNIMDemo.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64",
+					armv7,
+					armv6,
+					armv8,
+					"EXCLUDED_ARCHS=$(inherited)",
+					"$(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT))",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QNIMDemo/QNChatRoom",
+					"$(PROJECT_DIR)/QNIMDemo",
+					"$(PROJECT_DIR)/QNIMDemo/Frameworks",
+					"$(PROJECT_DIR)/QNIMDemo/QNIMSDK.framework/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = QNIMDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/QNIMDemo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QNIMDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		776734002665EBBA006AC9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DF8B4A29D2CE91BEA02813A /* Pods-QNIMDemo.release.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64",
+					armv7,
+					armv6,
+					armv8,
+					"EXCLUDED_ARCHS=$(inherited)",
+					"$(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT))",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QNIMDemo/QNChatRoom",
+					"$(PROJECT_DIR)/QNIMDemo",
+					"$(PROJECT_DIR)/QNIMDemo/Frameworks",
+					"$(PROJECT_DIR)/QNIMDemo/QNIMSDK.framework/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = QNIMDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/QNIMDemo",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QNIMDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		776734022665EBBA006AC9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA546D396EDDBA95760FC8AF /* Pods-QNIMDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				INFOPLIST_FILE = QNIMDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QNIMDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QNIMDemo.app/QNIMDemo";
+			};
+			name = Debug;
+		};
+		776734032665EBBA006AC9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE572B57728A6872A4774AD /* Pods-QNIMDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				INFOPLIST_FILE = QNIMDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QNIMDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QNIMDemo.app/QNIMDemo";
+			};
+			name = Release;
+		};
+		776734052665EBBA006AC9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F190BA2E9F6B58054BD8EA7E /* Pods-QNIMDemo-QNIMDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				INFOPLIST_FILE = QNIMDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QNIMDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QNIMDemo;
+			};
+			name = Debug;
+		};
+		776734062665EBBA006AC9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D4BAAE10D3DF1C58B4D1EEB /* Pods-QNIMDemo-QNIMDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				INFOPLIST_FILE = QNIMDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QNIMDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QNIMDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		776733CA2665EBB7006AC9F7 /* Build configuration list for PBXProject "QNIMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776733FC2665EBBA006AC9F7 /* Debug */,
+				776733FD2665EBBA006AC9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776733FE2665EBBA006AC9F7 /* Build configuration list for PBXNativeTarget "QNIMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776733FF2665EBBA006AC9F7 /* Debug */,
+				776734002665EBBA006AC9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776734012665EBBA006AC9F7 /* Build configuration list for PBXNativeTarget "QNIMDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776734022665EBBA006AC9F7 /* Debug */,
+				776734032665EBBA006AC9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776734042665EBBA006AC9F7 /* Build configuration list for PBXNativeTarget "QNIMDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776734052665EBBA006AC9F7 /* Debug */,
+				776734062665EBBA006AC9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 776733C72665EBB7006AC9F7 /* Project object */;
+}
