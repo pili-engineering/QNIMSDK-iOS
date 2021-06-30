@@ -42,18 +42,23 @@ typedef NS_ENUM(NSUInteger, QNIMLogLevel) {
 + (instancetype)sharedClient;
 
 @property (nonatomic, strong) QNSDKConfig *sdkConfig;
+//当前用户uid
+@property (nonatomic, copy) NSString *uid;
+//当前用户userName
+@property (nonatomic, copy) NSString *userName;
 
 - (void)registerWithSDKConfig:(QNSDKConfig *)config;
 
 + (NSString *)getCacheDir;
 
 /**
- * 通过用户名登录
+ * 通过用户Id登录
  **/
-- (void)signInByName:(NSString *)userName
-            password:(NSString *)password
-          completion:(void(^)(QNIMError *error))aCompletionBlock;
-
+- (void)signInByUserId:(NSString *)userId completion:(void (^)(QNIMError * _Nonnull qnImError))aCompletionBlock ;
+/**
+ * 获取RTC房间对应的聊天室ID
+ **/
+- (void)getGroupIdWithRoomId:(NSString *)roomId completion:(void(^)(NSString * groupId))completion ;
 /**
  * 获取当前的登录状态
  **/

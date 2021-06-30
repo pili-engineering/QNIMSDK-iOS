@@ -154,7 +154,7 @@
 
 //发送加入房间消息
 - (void)sendJoinMessage {
-    NSString *imUserId = [[NSUserDefaults standardUserDefaults] objectForKey:@"QN_IM_UID"];
+    NSString *imUserId = [QNIMClient sharedClient].uid;
     QNIMMessageObject *messageModel = [[QNIMMessageObject alloc]initWithQNIMMessageText:@"加入了房间" fromId:imUserId.longLongValue toId:self.groupId.longLongValue type:QNIMMessageTypeGroup conversationId:self.groupId.longLongValue];
 
     [self.chatRoomView sendMessage:messageModel];

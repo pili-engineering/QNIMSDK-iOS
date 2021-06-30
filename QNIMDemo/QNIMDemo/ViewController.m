@@ -24,8 +24,6 @@
 #define QN_ACCOUNT_ID_KEY @"QN_ACCOUNT_ID"
 //用户昵称
 #define QN_NICKNAME_KEY @"QN_NICKNAME"
-//IM uid
-#define QN_IM_UID_KEY @"QN_IM_UID"
 //手机号
 #define QN_PHONE_KEY @"QN_PHONE"
 //RTC appId
@@ -92,10 +90,7 @@
     request.timeoutInterval = 10;
     
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error) {
-            [MBProgressHUD showText:@"获取聊天室id失败"];
-            return;
-        }
+
         self.roomToken = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         
         [self requestImAcountWithUserId:userId];
@@ -107,52 +102,25 @@
 //获取聊天室Id
 - (void)requestImGroupIdWithRoomId:(NSString *)roomId {
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"group_id"] = roomId;
-    
-    [QNNetworkUtil postIMRequestWithAction:@"group" params:params success:^(NSDictionary *responseData) {
-        
-        NSString *groupId = responseData[@"im_group_id"];
-        [self gotoRTCVcWithRoomWithGroupId:groupId];
-            
-    } failure:^(NSError *error) {
-        [MBProgressHUD showText:@"获取聊天室id失败"];
-        [self gotoRTCVcWithRoomWithGroupId:@""];
+    [[QNIMClient sharedClient]getGroupIdWithRoomId:roomId completion:^(NSString * _Nonnull groupId) {
+        if (groupId) {
+            [self gotoRTCVcWithRoomWithGroupId:groupId];
+        } else {
+//            [MBProgressHUD showText:@"获取聊天室id失败"];
+        }
     }];
+
 }
 
 //请求IM登录信息
 - (void)requestImAcountWithUserId:(NSString *)userId {
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"user_id"] = userId;
-
-    [QNNetworkUtil postIMRequestWithAction:@"token" params:params success:^(NSDictionary *responseData) {
-        
-        NSString *uid = responseData[@"im_uid"];
-        NSString *psw= responseData[@"im_password"];
-        NSString *userName = responseData[@"im_username"];
-        
-        [[NSUserDefaults standardUserDefaults] setObject:uid forKey:QN_IM_UID_KEY];
-        [[NSUserDefaults standardUserDefaults] setObject:psw forKey:@"im_password"];
-        [[NSUserDefaults standardUserDefaults] setObject:userName forKey:@"im_username"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        
-        //登录IM
-        [[QNIMClient sharedClient] signInByName:userName password:psw completion:^(QNIMError * _Nonnull error) {
-            if (error) {
-                [MBProgressHUD showText:@"IM登录失败"];
-            }
-            
-            [self requestImGroupIdWithRoomId:self.roomName];
-            
-        }];
-        
-    } failure:^(NSError *error) {
-        [MBProgressHUD showText:@"IM信息请求失败"];
+    [[QNIMClient sharedClient]signInByUserId:userId completion:^(QNIMError * _Nonnull qnImError) {
+        if (qnImError) {
+//            [MBProgressHUD showText:@"IM登录失败"];
+        }
         [self requestImGroupIdWithRoomId:self.roomName];
     }];
-            
 }
 
 - (void)gotoRTCVcWithRoomWithGroupId:(NSString *)groupId {

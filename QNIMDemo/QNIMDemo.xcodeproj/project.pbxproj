@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4619D349A23543F63BC06456 /* Pods_QNIMDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF01A90A6ACE16339DBE9D1 /* Pods_QNIMDemoTests.framework */; };
+		7728B977268C699500E5C823 /* QNIMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7728B975268C698E00E5C823 /* QNIMSDK.framework */; };
+		7728B978268C699500E5C823 /* QNIMSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7728B975268C698E00E5C823 /* QNIMSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		776733D42665EBB7006AC9F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 776733D32665EBB7006AC9F7 /* AppDelegate.m */; };
 		776733D72665EBB7006AC9F7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 776733D62665EBB7006AC9F7 /* SceneDelegate.m */; };
 		776733DA2665EBB7006AC9F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776733D92665EBB7006AC9F7 /* ViewController.m */; };
@@ -47,8 +49,6 @@
 		776738C0266F6FB2006AC9F7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738BF266F6FB2006AC9F7 /* AssetsLibrary.framework */; };
 		776738C2266F6FBC006AC9F7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776738C1266F6FBC006AC9F7 /* CoreFoundation.framework */; };
 		776738F0266F7495006AC9F7 /* Pods_QNIMDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7B3A59711A544E8E972671 /* Pods_QNIMDemo.framework */; };
-		776B66F72685C3C000CBB77B /* QNIMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776B66F32685C36D00CBB77B /* QNIMSDK.framework */; };
-		776B66F82685C3C000CBB77B /* QNIMSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 776B66F32685C36D00CBB77B /* QNIMSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		777B31D9267B080400B6D52F /* QNMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777B31D8267B080400B6D52F /* QNMainViewController.m */; };
 		777B31E5267B229800B6D52F /* QNCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 777B31E3267B229800B6D52F /* QNCountdownButton.m */; };
 		777B31EA267B240700B6D52F /* QNLoginInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 777B31E9267B240700B6D52F /* QNLoginInfoModel.m */; };
@@ -79,7 +79,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				776B66F82685C3C000CBB77B /* QNIMSDK.framework in Embed Frameworks */,
+				7728B978268C699500E5C823 /* QNIMSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +90,7 @@
 		0D4BAAE10D3DF1C58B4D1EEB /* Pods-QNIMDemo-QNIMDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNIMDemo-QNIMDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-QNIMDemo-QNIMDemoUITests/Pods-QNIMDemo-QNIMDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6DF8B4A29D2CE91BEA02813A /* Pods-QNIMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNIMDemo.release.xcconfig"; path = "Target Support Files/Pods-QNIMDemo/Pods-QNIMDemo.release.xcconfig"; sourceTree = "<group>"; };
 		71E406712E7276C4BFEC4321 /* Pods_QNIMDemo_QNIMDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QNIMDemo_QNIMDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7728B975268C698E00E5C823 /* QNIMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QNIMSDK.framework; sourceTree = "<group>"; };
 		776733CF2665EBB7006AC9F7 /* QNIMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QNIMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776733D22665EBB7006AC9F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		776733D32665EBB7006AC9F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -149,7 +150,6 @@
 		776738BB266F6F92006AC9F7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		776738BF266F6FB2006AC9F7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		776738C1266F6FBC006AC9F7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		776B66F32685C36D00CBB77B /* QNIMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QNIMSDK.framework; sourceTree = "<group>"; };
 		777B31D7267B080400B6D52F /* QNMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNMainViewController.h; sourceTree = "<group>"; };
 		777B31D8267B080400B6D52F /* QNMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNMainViewController.m; sourceTree = "<group>"; };
 		777B31E3267B229800B6D52F /* QNCountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNCountdownButton.m; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				776738C2266F6FBC006AC9F7 /* CoreFoundation.framework in Frameworks */,
-				776B66F72685C3C000CBB77B /* QNIMSDK.framework in Frameworks */,
+				7728B977268C699500E5C823 /* QNIMSDK.framework in Frameworks */,
 				776738C0266F6FB2006AC9F7 /* AssetsLibrary.framework in Frameworks */,
 				776738BC266F6F92006AC9F7 /* libc++.tbd in Frameworks */,
 				776738B8266F6F83006AC9F7 /* libz.tbd in Frameworks */,
@@ -238,7 +238,7 @@
 				776736542668CAEE006AC9F7 /* QNChatRoom */,
 				776733D22665EBB7006AC9F7 /* AppDelegate.h */,
 				776733D32665EBB7006AC9F7 /* AppDelegate.m */,
-				776B66F32685C36D00CBB77B /* QNIMSDK.framework */,
+				7728B975268C698E00E5C823 /* QNIMSDK.framework */,
 				776733D52665EBB7006AC9F7 /* SceneDelegate.h */,
 				776733D62665EBB7006AC9F7 /* SceneDelegate.m */,
 				776735B326676090006AC9F7 /* QNNetworkUtil.h */,
