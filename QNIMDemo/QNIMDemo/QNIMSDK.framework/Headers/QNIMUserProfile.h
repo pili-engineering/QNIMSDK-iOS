@@ -6,14 +6,34 @@
 //
 
 #import <Foundation/Foundation.h>
+@class QNIMAuthQuestion;
+@class QNIMMessageSetting;
 
-NS_ASSUME_NONNULL_BEGIN
+
+typedef enum {
+    QNIMQNIMOpen = 0,           // 无需验证，任何人可以加为好友
+    QNIMQNIMNeedApproval,   // 需要同意方可加为好友
+    QNIMQNIMAnswerQuestion, // 需要回答问题正确方可加为好友
+    QNIMQNIMRejectAll       // 拒绝所有加好友申请
+} QNIMAddFriendAuthMode;
+
+typedef enum {
+    QNIMUserCategoryNormal = 0, // 普通用户
+    QNIMUserCategoryAdvanced,  // 高级用户
+} QNIMUserCategory;
 
 @interface QNIMUserProfile : NSObject
+
+
 /**
  用户id
  */
 @property (nonatomic,assign) long long userId;
+
+/**
+ 用户级别
+ */
+@property (nonatomic,assign) QNIMUserCategory userCategory;
 
 /**
  用户名
@@ -66,10 +86,23 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) NSString *privateInfoJson;
 
 /**
+ 验证问题
+ */
+@property (nonatomic, strong) QNIMAuthQuestion *authQuestion;
+
+/**
+ 消息设置
+ */
+@property (nonatomic, strong) QNIMMessageSetting *messageSetting;
+
+/**
+ 好友验证模式
+ */
+@property (nonatomic, assign) QNIMAddFriendAuthMode addFriendAuthMode;
+
+/**
  自动接收群邀请
  */
 @property (nonatomic,assign) BOOL isAutoAcceptGroupInvite;
 
 @end
-
-NS_ASSUME_NONNULL_END

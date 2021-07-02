@@ -6,7 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "QNIMClient.h"
+#import "QNIMDefines.h"
+@class QNIMOSSConfig;
+@class QNIMHostConfig;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,15 +18,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *cacheDir;
 
-@property (nonatomic, copy, readonly) NSString *vsn;
+@property (nonatomic, copy) NSString *vsn;
 
 @property (nonatomic, copy, readonly) NSString *sdkVersion;
+
+@property (nonatomic, copy) NSString *pushCertName;
 
 @property (nonatomic,copy) NSString *userAgent;
 
 @property (nonatomic,assign) BOOL enableDeliveryAck;
 
+@property (nonatomic, assign, readonly) QNIMLogLevel logoLevelType;
+
 @property (nonatomic, assign) BOOL consoleOutput;
+
+@property (nonatomic, strong) QNIMHostConfig *hostConfig;
 
 @property (nonatomic,assign) BOOL loadAllServerConversations;
 /**
@@ -61,6 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initConfigWithDataDir:(NSString *)dataDir
                              cacheDir:(NSString *)cacheDir
+                         pushCertName:(NSString *)pushCertName
                             userAgent:(NSString *)userAgent;
 @end
 

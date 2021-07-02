@@ -1,0 +1,38 @@
+//
+//  QNIMMessageAttachment.h
+//  QNIMSDK
+//
+//  Created by 郭茜 on 2021/7/1.
+//
+
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CGGeometry.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+typedef NS_ENUM(NSUInteger, QNIMAttachmentType) {
+    QNIMMessageAttactmentTypeLocation,
+    QNIMMessageAttactmentTypeFile,
+    QNIMMessageAttactmentTypeVoice,
+    QNIMMessageAttactmentTypeImage,
+    QNIMMessageAttactmentTypeVideo
+};
+
+typedef NS_ENUM(NSUInteger, QNIMAttachmentDownloadStatus) {
+    QNIMAttachmentDownloadStatusDownloaing,
+    QNIMAttachmentDownloadStatusSuccessed,
+    QNIMAttachmentDownloadStatusFailed,     // 下载失败
+    QNIMAttachmentDownloadStatusNotStart,   // 下载尚未开始
+    QNIMAttachmentDownloadStatusCanceled,    /// 下载被取消
+
+};
+
+@interface QNIMMessageAttachment : NSObject
+
+@property (nonatomic) CGSize size;
+
+- (instancetype)init;
+
+@end
+
+NS_ASSUME_NONNULL_END

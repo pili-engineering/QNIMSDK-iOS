@@ -129,8 +129,8 @@
 - (void)joinChatRoom {
     
     NSLog(@"登录状态：%ld",[QNIMClient sharedClient].signInStatus);
-
-    [[QNIMGroupOption sharedOption] joinGroupWithGroupId:self.groupId completion:^(QNIMError * _Nonnull error) {
+    
+    [[QNIMGroupOption sharedOption] joinGroupWithGroupId:self.groupId message:@"" completion:^(QNIMError * _Nonnull error) {
         if (error) {
             NSLog(@"❌join group errorCode : %ld \n errorMessage : %@",error.errorCode,error.errorMessage);
         }

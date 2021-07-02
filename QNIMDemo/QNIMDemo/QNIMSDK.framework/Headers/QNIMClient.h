@@ -6,34 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "QNIMUserProfile.h"
-#import "QNIMError.h"
 #import "QNSDKConfig.h"
+#import "QNIMError.h"
+#import "QNIMDefines.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-typedef NS_ENUM(NSUInteger, QNIMNetworkType) {
-    QNIMNetworkTypeMobile,
-    QNIMNetworkTypeWifi,
-    QNIMNetworkTypeCable,
-    QNIMNetworkTypeNone
-};
-
-typedef NS_ENUM(NSUInteger, QNIMConnectStatus) {
-    QNIMConnectStatusDisconnected,
-    QNIMConnectStatusConnected,
-};
-
-typedef NS_ENUM(NSUInteger, QNIMSignInStatus) {
-    QNIMSignInStatusSignOut,
-    QNIMSignInStatusSignIn,
-};
-
-typedef NS_ENUM(NSUInteger, QNIMLogLevel) {
-    QNIMLogLevelError,
-    QNIMLogLevelWarning,
-    QNIMLogLevelDebug,
-};
 
 @class QNSDKConfig;
 
@@ -59,6 +36,14 @@ typedef NS_ENUM(NSUInteger, QNIMLogLevel) {
  * 获取RTC房间对应的聊天室ID
  **/
 - (void)getGroupIdWithRoomId:(NSString *)roomId completion:(void(^)(NSString * groupId))completion ;
+
+/**
+ * 退出登录
+ **/
+- (void)signOutID:(NSInteger)userID ignoreUnbindDevice:(BOOL)ignoreUnbindDevice completion:(void(^)(QNIMError *error))aCompletionBlock;
+
+
+- (void)signOutignoreUnbindDevice:(BOOL)ignoreUnbindDevice completion:(void(^)(QNIMError *error))aCompletionBlock;
 /**
  * 获取当前的登录状态
  **/
