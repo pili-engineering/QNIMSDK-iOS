@@ -17,6 +17,7 @@
 #import "QNCountdownButton.h"
 #import "QNLoginInfoModel.h"
 #import <MJExtension/MJExtension.h>
+#import "QNIMUserModel.h"
 
 //登录token
 #define QN_LOGIN_TOKEN_KEY @"QN_LOGIN_TOKEN"
@@ -28,6 +29,7 @@
 #define QN_PHONE_KEY @"QN_PHONE"
 //RTC appId
 #define QN_APPID_KEY @"d8lk7l4ed"
+#define QN_IM_UID_KEY @"QN_IM_UID"
 
 @interface ViewController ()
 
@@ -102,7 +104,7 @@
 //获取聊天室Id
 - (void)requestImGroupIdWithRoomId:(NSString *)roomId {
     
-    [[QNIMClient sharedClient]getGroupIdWithRoomId:roomId completion:^(NSString * _Nonnull groupId) {
+    [self getGroupIdWithRoomId:roomId completion:^(NSString *groupId) {
         if (groupId) {
             [self gotoRTCVcWithRoomWithGroupId:groupId];
         } else {
@@ -112,15 +114,54 @@
 
 }
 
+- (void)getGroupIdWithRoomId:(NSString *)roomId completion:(void(^)(NSString * groupId))completion {
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"group_id"] = roomId;
+    [QNNetworkUtil postIMRequestWithAction:@"group" params:params success:^(NSDictionary *responseData) {
+            
+        completion(responseData[@"im_group_id"]);
+        
+        } failure:^(NSError *error) {
+            
+            completion(nil);
+        }];
+    
+}
+
 //请求IM登录信息
 - (void)requestImAcountWithUserId:(NSString *)userId {
     
-    [[QNIMClient sharedClient]signInByUserId:userId completion:^(QNIMError * _Nonnull qnImError) {
-        if (qnImError) {
-//            [MBProgressHUD showText:@"IM登录失败"];
-        }
-        [self requestImGroupIdWithRoomId:self.roomName];
+    [self postIMMessageWithUserId:userId completion:^(QNIMUserModel *userModel) {
+        
+        [[NSUserDefaults standardUserDefaults] setObject:userModel.im_uid forKey:QN_IM_UID_KEY];
+        
+        [[QNIMClient sharedClient] signInByName:userModel.im_username password:userModel.im_password completion:^(QNIMError * _Nonnull qnImError) {
+            
+            if (qnImError) {
+    //            [MBProgressHUD showText:@"IM登录失败"];
+            }
+            [self requestImGroupIdWithRoomId:self.roomName];
+        }];
+        
     }];
+}
+
+- (void)postIMMessageWithUserId:(NSString *)userId completion:(void (^)(QNIMUserModel *userModel))completion {
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"user_id"] = userId;
+    [QNNetworkUtil postIMRequestWithAction:@"token" params:params success:^(NSDictionary *responseData) {
+        
+        QNIMUserModel *model = [QNIMUserModel mj_objectWithKeyValues:responseData];
+        
+        completion(model);
+        
+        } failure:^(NSError *error) {
+            
+            completion(nil);
+            
+        }];
 }
 
 - (void)gotoRTCVcWithRoomWithGroupId:(NSString *)groupId {

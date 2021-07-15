@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[QNIMChatOption sharedOption] addDelegate:self];
+    [[QNIMChatService sharedOption] addDelegate:self delegateQueue:dispatch_get_main_queue()];
     [self configureRTCEngine];
     [self setupButtons];
     [self setupChatView];
@@ -121,16 +121,12 @@
     [self.chatRoomView receivedMessages:messages];
 }
 
-- (void)messageStatusChanged:(QNIMMessageObject *)message error:(QNIMError *)error {
-    
-}
-
 //加入聊天室
 - (void)joinChatRoom {
     
     NSLog(@"登录状态：%ld",[QNIMClient sharedClient].signInStatus);
-    
-    [[QNIMGroupOption sharedOption] joinGroupWithGroupId:self.groupId message:@"" completion:^(QNIMError * _Nonnull error) {
+
+    [[QNIMGroupService sharedOption] joinGroupWithGroupId:self.groupId message:@"" completion:^(QNIMError * _Nonnull error) {
         if (error) {
             NSLog(@"❌join group errorCode : %ld \n errorMessage : %@",error.errorCode,error.errorMessage);
         }
@@ -144,7 +140,7 @@
 //退出聊天室
 - (void)leaveChatRoom {
     
-    [[QNIMGroupOption sharedOption] leaveGroupWithGroupId:self.groupId completion:^(QNIMError * _Nonnull error) {
+    [[QNIMGroupService sharedOption] leaveGroupWithGroupId:self.groupId completion:^(QNIMError * _Nonnull error) {
         if (error) {
             NSLog(@"❌leave group errorCode : %ld \n errorMessage : %@",error.errorCode,error.errorMessage);
         }
@@ -154,7 +150,7 @@
 
 //发送加入房间消息
 - (void)sendJoinMessage {
-    NSString *imUserId = [QNIMClient sharedClient].uid;
+    NSString *imUserId = [[NSUserDefaults standardUserDefaults] objectForKey:@"QN_IM_UID"];
     QNIMMessageObject *messageModel = [[QNIMMessageObject alloc]initWithQNIMMessageText:@"加入了房间" fromId:imUserId.longLongValue toId:self.groupId.longLongValue type:QNIMMessageTypeGroup conversationId:self.groupId.longLongValue];
 
     [self.chatRoomView sendMessage:messageModel];

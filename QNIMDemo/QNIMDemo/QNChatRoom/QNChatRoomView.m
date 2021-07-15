@@ -234,7 +234,7 @@ static NSString * const banNotifyContent = @"您已被管理员禁言";
 //  发送消息
 - (void)onTouchSendButton:(NSString *)text {
     
-    NSString *imUserId = [QNIMClient sharedClient].uid;
+    NSString *imUserId = [[NSUserDefaults standardUserDefaults] objectForKey:@"QN_IM_UID"];
     QNIMMessageObject *message = [[QNIMMessageObject alloc]initWithQNIMMessageText:text fromId:imUserId.longLongValue toId:self.conversationId type:QNIMMessageTypeGroup conversationId:self.conversationId];
     [self sendMessage:message];
     
@@ -250,7 +250,7 @@ static NSString * const banNotifyContent = @"您已被管理员禁言";
     if (messageContent == nil) {
         return;
     }
-    [[QNIMChatOption sharedOption] sendMessage:messageContent];
+    [[QNIMChatService sharedOption] sendMessage:messageContent];
     
     [self appendAndDisplayMessage:messageContent];
     [self.inputBar clearInputView];

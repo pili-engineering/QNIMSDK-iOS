@@ -13,7 +13,7 @@ target 'QNIMDemo' do
    pod 'AFNetworking'
    pod 'MBProgressHUD'
    pod 'IQKeyboardManager'
-   
+
   # Pods for QNIMDemo
 
   target 'QNIMDemoTests' do
