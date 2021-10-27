@@ -47,8 +47,7 @@
     NSString *phone = [NSString stringWithFormat:@"设备名称:%@;%@;%@;%@", phoneName,localizedModel,systemName,phoneVersion];
 
     QNSDKConfig *config = [[QNSDKConfig alloc]initConfigWithDataDir:dataDir cacheDir:cacheDir pushCertName:@"" userAgent:phone];
-    config.appID = @"dxdjbunzmxiu";
-    config.appSecret = @"47B13PBIAPDARZKD";
+    config.appID = @"cigzypnhoyno";
     [[QNIMClient sharedClient] registerWithSDKConfig:config];
     
 }
