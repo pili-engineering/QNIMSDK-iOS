@@ -11,11 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface QNIMImageAttachment : QNIMFileAttachment
 
-@property (nonatomic,copy) NSString *thumbnailPath;
-@property (nonatomic,assign)  long long thumbnailFileLength;
-@property (nonatomic) CGSize thumbnailSize;
-@property (nonatomic) CGSize pictureSize;
-
 @property (nonatomic,assign) QNIMAttachmentDownloadStatus thumbnailDownLoadStatus;
 
 - (instancetype)initWithData:(NSData *)aData

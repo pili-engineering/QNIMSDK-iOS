@@ -88,7 +88,7 @@ typedef enum {
 //群消息AckCount数目
 @property (nonatomic,assign) int groupAckCount;
 
-@property (nonatomic, strong, readonly) QNIMMessageAttachment *attachment;
+@property (nonatomic, strong) QNIMMessageAttachment *attachment;
 
 
 /**

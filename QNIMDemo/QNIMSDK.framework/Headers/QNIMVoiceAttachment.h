@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  时长
  */
-@property (nonatomic,assign) int duration;
+@property (nonatomic,assign) NSInteger duration;
 
 /**
  初始化QNIMFileAttachment

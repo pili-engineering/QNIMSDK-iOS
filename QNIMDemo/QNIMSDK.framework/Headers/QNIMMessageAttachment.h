@@ -31,6 +31,19 @@ typedef NS_ENUM(NSUInteger, QNIMAttachmentDownloadStatus) {
 
 @property (nonatomic) CGSize size;
 
+@property (nonatomic,copy) NSString *localPath;
+@property (nonatomic,copy) NSString *thumbnailPath;
+@property (nonatomic,assign)  NSInteger thumbnailFileLength;
+@property (nonatomic) CGSize thumbnailSize;
+@property (nonatomic) CGSize pictureSize;
+@property (nonatomic,strong) NSData *aData;
+@property (nonatomic,strong) NSData *aThumbnailData;
+@property (nonatomic) CGSize imageSize;
+@property (nonatomic,copy) NSString *conversationId;
+@property (nonatomic,copy) NSString *aDisplayName;
+@property (nonatomic,copy) NSString *url;
+@property (nonatomic,assign) int duration;
+
 - (instancetype)init;
 
 @end
