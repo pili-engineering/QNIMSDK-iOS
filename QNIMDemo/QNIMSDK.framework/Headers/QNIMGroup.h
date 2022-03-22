@@ -109,63 +109,63 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 群Id
  **/
-@property (nonatomic,assign, readonly) long long groupId;
+@property (nonatomic,assign) long long groupId;
 
 
-@property (nonatomic, assign, readonly) QNIMGroupType groupType;
+@property (nonatomic, assign) QNIMGroupType groupType;
 
 /**
  * 在群里的昵称
  **/
-@property (nonatomic,copy, readonly) NSString *myNickName;
+@property (nonatomic,copy) NSString *myNickName;
 
 /**
  * 群名称
  **/
-@property (nonatomic, copy, readonly) NSString *name;
+@property (nonatomic, copy) NSString *name;
 
 /**
  * 群描述
  **/
-@property (nonatomic, copy, readonly) NSString *groupDescription;
+@property (nonatomic, copy) NSString *groupDescription;
 
 /**
  * 群头像
  **/
-@property (nonatomic,copy, readonly) NSString *avatarUrl;
+@property (nonatomic,copy) NSString *avatarUrl;
 
 /**
  * 群头像下载后的本地路径
  **/
-@property (nonatomic,copy, readonly) NSString *avatarPath;
+@property (nonatomic,copy) NSString *avatarPath;
 
 /**
  * 群头像缩略图
  **/
-@property (nonatomic,copy, readonly) NSString *avatarThumbnailUrl;
+@property (nonatomic,copy) NSString *avatarThumbnailUrl;
 
 /**
  * 群头像缩略图下载后的本地路径
  **/
-@property (nonatomic,copy, readonly) NSString *avatarThumbnailPath;
+@property (nonatomic,copy ) NSString *avatarThumbnailPath;
 
 /**
  * 群创建时间
  **/
-@property (nonatomic,readonly) long long creatTime;
+@property (nonatomic) long long creatTime;
 
 /**
  * 群扩展信息
  **/
-@property (nonatomic, copy, readonly) NSString *jsonextension;
+@property (nonatomic, copy ) NSString *jsonextension;
 
 
-@property (nonatomic, strong, readonly) QNIMGroupSharedFile *shareFile;
+@property (nonatomic, strong ) QNIMGroupSharedFile *shareFile;
 
 /**
  * 群成员
  **/
-@property (nonatomic, assign, readonly) NSInteger ownerId;
+@property (nonatomic, assign ) NSInteger ownerId;
 
 
 @property (nonatomic, strong) QNIMGroupAnnounment *annountment;
@@ -173,42 +173,42 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 最大人数
  **/
-@property (nonatomic, assign, readonly) NSInteger capactiy;
+@property (nonatomic, assign ) NSInteger capactiy;
 
 /**
  * 群成员数量，包含Owner，admins 和members
  **/
-@property (nonatomic, assign, readonly) NSInteger membersCount;
+@property (nonatomic, assign ) NSInteger membersCount;
 
 /**
  * 群管理员数量
  **/
-@property (nonatomic, assign, readonly) NSInteger adminsCount;
+@property (nonatomic, assign ) NSInteger adminsCount;
 
 /**
  * 群共享文件数量
  **/
-@property (nonatomic, assign, readonly) NSInteger sharedFilesCount;
+@property (nonatomic, assign ) NSInteger sharedFilesCount;
 
 /**
  群消息通知类型
  */
-@property (nonatomic,assign, readonly) QNIMGroupMsgPushMode msgPushMode;
+@property (nonatomic,assign ) QNIMGroupMsgPushMode msgPushMode;
 
 /**
  群信息修改模式
  */
-@property (nonatomic,assign, readonly) QNIMGroupModifyMode modifyMode;
+@property (nonatomic,assign ) QNIMGroupModifyMode modifyMode;
 
 /**
  入群审批模式
  */
-@property (nonatomic,assign, readonly) QNIMGroupJoinAuthMode joinAuthMode;
+@property (nonatomic,assign ) QNIMGroupJoinAuthMode joinAuthMode;
 
 /**
  入群邀请模式
  */
-@property (nonatomic,assign, readonly) QNIMGroupInviteMode inviteMode;
+@property (nonatomic,assign ) QNIMGroupInviteMode inviteMode;
 
 /**
  是否开启群消息已读功能
@@ -231,7 +231,7 @@ NS_ASSUME_NONNULL_BEGIN
  **/
 @property (nonatomic,assign) QNIMGroupStatus groupStatus;
 
-@property (nonatomic,assign,readonly) BOOL isMember;
+@property (nonatomic,assign) BOOL isMember;
 
 @property (nonatomic,assign) QNIMGroupMemberRoleType roleType;
 

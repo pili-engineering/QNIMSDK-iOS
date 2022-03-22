@@ -4,34 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/floo-ios.framework/Info.plist</key>
-		<data>
-		o+Ow/43aRo9UeZcCSm1DKLQ0D/U=
-		</data>
-		<key>Frameworks/floo-ios.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		4ByJzuBu5XC7YGLWmoJfAcmvz00=
-		</data>
-		<key>Frameworks/floo-ios.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		B/yPVDKpP657h2O188rSVMsFyN4=
-		</data>
-		<key>Frameworks/floo-ios.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		cya1iipBGI/Wqu4WvxkEmXkxl34=
-		</data>
-		<key>Frameworks/floo-ios.framework/_CodeSignature/CodeResources</key>
-		<data>
-		5Uiv2XN6B2XecBh1wM9s8QaiTGk=
-		</data>
-		<key>Frameworks/floo-ios.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		DoabHHoDAyDT6P6RhMHFjEArQXI=
-		</data>
-		<key>Frameworks/floo-ios.framework/floo-ios</key>
-		<data>
-		39snGIJpqdH4LjPpkPk3QJ5Dllc=
-		</data>
 		<key>Headers/QNIMApplication.h</key>
 		<data>
 		wqS1RPFSr0Yz4BSeP/qiJ+rj64g=
@@ -42,7 +14,7 @@
 		</data>
 		<key>Headers/QNIMChatService.h</key>
 		<data>
-		TH0UFNFW5UnIeCGdpkrpLZSYmG4=
+		6GW7DNRmB6S9Ns8M9jcwd70ftqs=
 		</data>
 		<key>Headers/QNIMChatServiceProtocol.h</key>
 		<data>
@@ -54,7 +26,7 @@
 		</data>
 		<key>Headers/QNIMConversation.h</key>
 		<data>
-		A8k5HUIKJKrmF/NOLKZsp05rlSc=
+		5LYB1Omp80jRAXwRKjapjVGM/vc=
 		</data>
 		<key>Headers/QNIMCreatGroupOption.h</key>
 		<data>
@@ -78,7 +50,7 @@
 		</data>
 		<key>Headers/QNIMGroup.h</key>
 		<data>
-		cj3f0WZ2PzpAv91fGeDNbJ1Orww=
+		iq2AvNQZ4xTRLbm8+cwLdUHRzY4=
 		</data>
 		<key>Headers/QNIMGroupAnnounment.h</key>
 		<data>
@@ -134,7 +106,7 @@
 		</data>
 		<key>Headers/QNIMMessageObject.h</key>
 		<data>
-		7y5bktPA8j+GTrmXs6mdWsL+/pY=
+		490ElS493+db4RIXDoD8ebJRxok=
 		</data>
 		<key>Headers/QNIMMessagePushSetting.h</key>
 		<data>
@@ -158,7 +130,7 @@
 		</data>
 		<key>Headers/QNIMRoster.h</key>
 		<data>
-		wRZWXd9ZTr49tDn9g2uSfVB3Pnc=
+		OkaWQMV9uhWDtKOz4ZNsy6+ZTpw=
 		</data>
 		<key>Headers/QNIMRosterService.h</key>
 		<data>
@@ -198,7 +170,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eiq7ugUeQ5QaA6QE5NZVbYDvlTc=
+		uGv6Ce04rWKTVP/doWFZKQTyoqA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -207,83 +179,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/floo-ios.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			o+Ow/43aRo9UeZcCSm1DKLQ0D/U=
-			</data>
-			<key>hash2</key>
-			<data>
-			7hmIq79KdE8KS2rc94S5vFWZq4Gzn7XO+MlLiS70Fjc=
-			</data>
-		</dict>
-		<key>Frameworks/floo-ios.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4ByJzuBu5XC7YGLWmoJfAcmvz00=
-			</data>
-			<key>hash2</key>
-			<data>
-			/vR/Yqa3MeWKeylnqrY00IhUmrHmqIoF+BbYA2CK1/8=
-			</data>
-		</dict>
-		<key>Frameworks/floo-ios.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			B/yPVDKpP657h2O188rSVMsFyN4=
-			</data>
-			<key>hash2</key>
-			<data>
-			gy66dSWZx0p/NVXEASY6B86iRxCHtRTzUVYsKTeW/HE=
-			</data>
-		</dict>
-		<key>Frameworks/floo-ios.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cya1iipBGI/Wqu4WvxkEmXkxl34=
-			</data>
-			<key>hash2</key>
-			<data>
-			XcD1dImYb0p6dadGs4vcmbp0gGnQVwtEUJPTPrxV1Qs=
-			</data>
-		</dict>
-		<key>Frameworks/floo-ios.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5Uiv2XN6B2XecBh1wM9s8QaiTGk=
-			</data>
-			<key>hash2</key>
-			<data>
-			BeptzYT3Jtxkyl34BD8SGZe4tohO5YRfHeTUn6f7su0=
-			</data>
-		</dict>
-		<key>Frameworks/floo-ios.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DoabHHoDAyDT6P6RhMHFjEArQXI=
-			</data>
-			<key>hash2</key>
-			<data>
-			J8vVuTdnf1FsGYgvqWNEUlKvA9cWShM3wO045PBzMRI=
-			</data>
-		</dict>
-		<key>Frameworks/floo-ios.framework/floo-ios</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			39snGIJpqdH4LjPpkPk3QJ5Dllc=
-			</data>
-			<key>hash2</key>
-			<data>
-			v42WxS2IQcZz6oifLs8WEweP3YJ00QNg+ahkqHK5nsY=
-			</data>
-		</dict>
 		<key>Headers/QNIMApplication.h</key>
 		<dict>
 			<key>hash</key>
@@ -310,11 +205,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TH0UFNFW5UnIeCGdpkrpLZSYmG4=
+			6GW7DNRmB6S9Ns8M9jcwd70ftqs=
 			</data>
 			<key>hash2</key>
 			<data>
-			EHBSNMBX3ZfvRebqag811mFgze3CMjYhGJzjXeaSYEE=
+			tRnaO3sABAWv0bYZY6L1p7AlPr2Mygo6q5k8Q8S+nJA=
 			</data>
 		</dict>
 		<key>Headers/QNIMChatServiceProtocol.h</key>
@@ -343,11 +238,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A8k5HUIKJKrmF/NOLKZsp05rlSc=
+			5LYB1Omp80jRAXwRKjapjVGM/vc=
 			</data>
 			<key>hash2</key>
 			<data>
-			M0g8HvgU7s4TDQIfMgyYjgwBNjwb6CbTbszwRpx2FZU=
+			GMEb40W50qJNUOsEUMCvHVTHsUSKHTb2sDnONTWXoOY=
 			</data>
 		</dict>
 		<key>Headers/QNIMCreatGroupOption.h</key>
@@ -409,11 +304,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cj3f0WZ2PzpAv91fGeDNbJ1Orww=
+			iq2AvNQZ4xTRLbm8+cwLdUHRzY4=
 			</data>
 			<key>hash2</key>
 			<data>
-			UROq+9dRMiiM/Cjnp30qTcuCXTwPf076WlBG55tiZsg=
+			/pZ9JaGS21uGi0ozmWN5AqN7WJ9xTIepbG5wiCsSqsc=
 			</data>
 		</dict>
 		<key>Headers/QNIMGroupAnnounment.h</key>
@@ -563,11 +458,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7y5bktPA8j+GTrmXs6mdWsL+/pY=
+			490ElS493+db4RIXDoD8ebJRxok=
 			</data>
 			<key>hash2</key>
 			<data>
-			zQWUBc23baq0ujd4Jh5oPWPuukkGWk6lirrW3zTh1ek=
+			UUQRYXa2s/Dfuhy3BPvN7oztWhcSEfjCQ4EK+zHlJPU=
 			</data>
 		</dict>
 		<key>Headers/QNIMMessagePushSetting.h</key>
@@ -629,11 +524,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wRZWXd9ZTr49tDn9g2uSfVB3Pnc=
+			OkaWQMV9uhWDtKOz4ZNsy6+ZTpw=
 			</data>
 			<key>hash2</key>
 			<data>
-			AdqXfWBokLSnzs5EqHBergWCupV5+85vO/jw/6Q07RE=
+			afJYAFBowe0R8iAOOHnLxpgaii/fQe/g+30xpys67yA=
 			</data>
 		</dict>
 		<key>Headers/QNIMRosterService.h</key>

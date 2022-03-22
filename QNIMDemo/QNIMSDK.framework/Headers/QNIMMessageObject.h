@@ -6,10 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "QNIMMessageAttachment.h"
+#import "QNIMMessageConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-@class QNIMMessageAttachment,QNIMMessageConfig;
 
 typedef enum {
     QNIMDeliveryStatusNew = 0,    // 新创建消息
@@ -58,7 +58,7 @@ typedef enum {
 
 @property (nonatomic, assign) QNIMMessageType messageType;
 
-@property (nonatomic, assign, readonly) long long serverTimestamp;
+@property (nonatomic, assign) long long serverTimestamp;
 
 @property (nonatomic, assign) long long clientTimestamp;
 

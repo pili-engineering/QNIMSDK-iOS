@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import "QNIMChatServiceProtocol.h"
 #import "QNIMConversation.h"
+#import "QNIMMessageObject.h"
+#import "QNIMError.h"
 
 /**
  * 缩略图生成策略,
@@ -18,8 +20,6 @@ typedef enum {
 } QNIMThumbnailStrategy;
 
 NS_ASSUME_NONNULL_BEGIN
-
-@class QNIMMessageObject,QNIMError;
 
 @interface QNIMChatService : NSObject
 

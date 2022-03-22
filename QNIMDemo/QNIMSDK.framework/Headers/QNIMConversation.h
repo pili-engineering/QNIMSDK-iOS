@@ -9,8 +9,6 @@
 #import "QNIMMessageObject.h"
 #import "QNIMError.h"
 
-@class QNIMError;
-
 typedef enum {
     QNIMConversationSingle = 0,     // 单聊
     QNIMConversationGroup,     // 群聊
@@ -29,27 +27,27 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  会话Id
  */
-@property (nonatomic,assign, readonly) long long conversationId;
+@property (nonatomic,assign) long long conversationId;
 
 /**
  会话类型
  */
-@property (nonatomic,assign, readonly) QNIMConversationType type;
+@property (nonatomic,assign) QNIMConversationType type;
 
 /**
  最新消息
  */
-@property (nonatomic, strong, readonly) QNIMMessageObject *lastMessage;
+@property (nonatomic, strong) QNIMMessageObject *lastMessage;
 
 /**
  未读消息数量
  */
-@property (nonatomic,assign, readonly) NSInteger unreadNumber;
+@property (nonatomic,assign) NSInteger unreadNumber;
 
 /**
  会话中所有消息数量
  */
-@property (nonatomic,assign, readonly) NSInteger messageCount;
+@property (nonatomic,assign) NSInteger messageCount;
 
 
 /**

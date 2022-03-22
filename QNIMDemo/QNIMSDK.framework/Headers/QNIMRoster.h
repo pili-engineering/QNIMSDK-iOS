@@ -34,45 +34,50 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) NSString *nickName;
 
 /**
- 好友头像
+ 好友头像（上传到七牛域名的图片url）
  */
 @property (nonatomic,copy) NSString *avatarUrl;
 
 /**
+ 好友头像直接地址（其他域名的图片url）
+ */
+@property (nonatomic,copy) NSString *avatarRatelUrl;
+
+/**
  好友头像本地存储路径
  */
-@property (nonatomic,copy, readonly) NSString *avatarPath;
+@property (nonatomic,copy) NSString *avatarPath;
 
 /**
  好友头像缩略图本地存储路径
  */
-@property (nonatomic,copy, readonly) NSString *avatarThumbnailPath;
+@property (nonatomic,copy) NSString *avatarThumbnailPath;
 
 
 /**
   扩展信息，用户设置的好友可以看到的信息，比如地址，个性签名等
  */
-@property (nonatomic,copy, readonly) NSString *json_PublicInfo;
+@property (nonatomic,copy) NSString *json_PublicInfo;
 
 /**
  用户对好友添加的备注等信息
  */
-@property (nonatomic, copy, readonly) NSString *json_alias;
+@property (nonatomic, copy) NSString *json_alias;
 
 /**
  用户的服务器扩展信息
  */
-@property (nonatomic,copy, readonly) NSString *json_ext;
+@property (nonatomic,copy) NSString *json_ext;
 
 /**
  用户的本地扩展信息
  */
-@property (nonatomic,copy, readonly) NSString *json_localExt;
+@property (nonatomic,copy) NSString *json_localExt;
 
 /**
  是否提醒用户消息
  */
-@property (nonatomic, assign, readonly) BOOL isMuteNotification;
+@property (nonatomic, assign) BOOL isMuteNotification;
 
 /**
  联系人关系
