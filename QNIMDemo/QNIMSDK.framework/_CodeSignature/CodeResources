@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/QNIMGroupBannedMember.h</key>
 		<data>
-		1K+nYFSPG2UZig7Om57mc+2/fZE=
+		ubkw40TsP16h9vtMYjLPfTXutoU=
 		</data>
 		<key>Headers/QNIMGroupInvitation.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/QNIMGroupMember.h</key>
 		<data>
-		nDp7GhH7OYj0Bi/hb2wYQWxVQCI=
+		RkHyV7NraOrOXIUzn4fg5LL8F+g=
 		</data>
 		<key>Headers/QNIMGroupService.h</key>
 		<data>
@@ -337,11 +337,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1K+nYFSPG2UZig7Om57mc+2/fZE=
+			ubkw40TsP16h9vtMYjLPfTXutoU=
 			</data>
 			<key>hash2</key>
 			<data>
-			YpVDHryHHOMEi3l9Cr175bWSn3/sUudDaI8AX5lUH0k=
+			RvNvuEhzcT9fgPze3N6ul4AkN44aftU5BAD4NfnpJVs=
 			</data>
 		</dict>
 		<key>Headers/QNIMGroupInvitation.h</key>
@@ -359,11 +359,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nDp7GhH7OYj0Bi/hb2wYQWxVQCI=
+			RkHyV7NraOrOXIUzn4fg5LL8F+g=
 			</data>
 			<key>hash2</key>
 			<data>
-			dI76vBuY1Gq7rJwXJwQcJkuGFj8nHl/WUJPoXYo5Uog=
+			MRu//rG3SVDGAJNciM9SPbcqge5tVfSOY5O3NKAnVGU=
 			</data>
 		</dict>
 		<key>Headers/QNIMGroupService.h</key>
