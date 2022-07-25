@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,assign) BOOL enableDeliveryAck;
 
-@property (nonatomic, assign, readonly) QNIMLogLevel logoLevelType;
+@property (nonatomic, assign, readonly) QNIMLogLevel logLevelType;
 
 @property (nonatomic, assign) BOOL consoleOutput;
 
