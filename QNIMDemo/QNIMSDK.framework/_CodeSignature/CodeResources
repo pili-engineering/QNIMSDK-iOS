@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/QNIMClient.h</key>
 		<data>
-		9pmhlVy1/UlXGmY4qw3r9AVZIxg=
+		s0a4+nd5THGgoAJBPFd7eYsVCk8=
 		</data>
 		<key>Headers/QNIMConversation.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/QNIMDefines.h</key>
 		<data>
-		J3z/8ij9Mf+GXs9f2dddf8+f1rs=
+		cy8UiUhAr6Tr2NkAjL+DQ9NmK6A=
 		</data>
 		<key>Headers/QNIMDevice.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/QNIMError.h</key>
 		<data>
-		QrgxFJuoDENxZ3JsXB3Y7wOPFIM=
+		3LMstff5rDom/MTrSD5+vg3isZY=
 		</data>
 		<key>Headers/QNIMFileAttachment.h</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>Headers/QNSDKConfig.h</key>
 		<data>
-		uasoESRzPqF57MznSfo0pfR4aI8=
+		crl2S3nX7klY0cWJOLmU7NIFws0=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -227,11 +227,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9pmhlVy1/UlXGmY4qw3r9AVZIxg=
+			s0a4+nd5THGgoAJBPFd7eYsVCk8=
 			</data>
 			<key>hash2</key>
 			<data>
-			XxRU9VxtW1+AZxblsK3Tr7adiVucSCBAw6hM8K+Lvww=
+			BVZ/ln237uaHG1MJRT8jqLRWan9i93a5GbBvcOuck9U=
 			</data>
 		</dict>
 		<key>Headers/QNIMConversation.h</key>
@@ -260,11 +260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J3z/8ij9Mf+GXs9f2dddf8+f1rs=
+			cy8UiUhAr6Tr2NkAjL+DQ9NmK6A=
 			</data>
 			<key>hash2</key>
 			<data>
-			VuxupTkxJvmOtJPa7DgJPod6HAe6yFKP09vvZ0pyPu0=
+			m1/kbl5Klcwo1u4ZilYYZdCiUJxGLju+8bAG3NsqHyg=
 			</data>
 		</dict>
 		<key>Headers/QNIMDevice.h</key>
@@ -282,11 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QrgxFJuoDENxZ3JsXB3Y7wOPFIM=
+			3LMstff5rDom/MTrSD5+vg3isZY=
 			</data>
 			<key>hash2</key>
 			<data>
-			kMJQ+cO8hw09LfGYek2UT0HN37Adzblwh5+nSsmzo+A=
+			ZopdYMVi9iPkDcc3X5vbtIimdXX9/sdcV/EUe9EeqVU=
 			</data>
 		</dict>
 		<key>Headers/QNIMFileAttachment.h</key>
@@ -623,11 +623,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uasoESRzPqF57MznSfo0pfR4aI8=
+			crl2S3nX7klY0cWJOLmU7NIFws0=
 			</data>
 			<key>hash2</key>
 			<data>
-			yQOaTCy0hlZiNZiMGsdBzos2fvEcAVvRib7kCwGFbGM=
+			sCChimjv5W3rBD1zH0ZntGomsYrB6bq6Wm3kXzktKYQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
