@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		KXaz3QanbXMXi3xUThx6sQr8LWs=
+		</data>
 		<key>Headers/QNIMApplication.h</key>
 		<data>
 		wqS1RPFSr0Yz4BSeP/qiJ+rj64g=
@@ -98,7 +102,7 @@
 		</data>
 		<key>Headers/QNIMMessageAttachment.h</key>
 		<data>
-		ju5LzTr8hlmJ7SjAx1+zAySP2Rs=
+		BV0LE09xjwKe90moaQR4oWn+a/I=
 		</data>
 		<key>Headers/QNIMMessageConfig.h</key>
 		<data>
@@ -114,7 +118,7 @@
 		</data>
 		<key>Headers/QNIMMessageSetting.h</key>
 		<data>
-		WxduJKHedgJeK0sHs5g9dlbrPd8=
+		f7p6nt+pCmhRnmQbDt0j/M0HBsw=
 		</data>
 		<key>Headers/QNIMPushService.h</key>
 		<data>
@@ -150,7 +154,7 @@
 		</data>
 		<key>Headers/QNIMUserService.h</key>
 		<data>
-		wOskdXEzcSlXH/1s7VyC0RYxRTU=
+		jR0cZoZ9zKsdy+ANcMAGuM+FbQA=
 		</data>
 		<key>Headers/QNIMUserServiceProtocol.h</key>
 		<data>
@@ -436,11 +440,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ju5LzTr8hlmJ7SjAx1+zAySP2Rs=
+			BV0LE09xjwKe90moaQR4oWn+a/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			dP0dIQNRSiX3N6dUqiJ6IhryrgkClErvXYKekL9iw0o=
+			suSzYUzbDFR4JNW0iPpFEbNjV1HF1uCsGUtnqQiWQ70=
 			</data>
 		</dict>
 		<key>Headers/QNIMMessageConfig.h</key>
@@ -480,11 +484,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WxduJKHedgJeK0sHs5g9dlbrPd8=
+			f7p6nt+pCmhRnmQbDt0j/M0HBsw=
 			</data>
 			<key>hash2</key>
 			<data>
-			kZ1boCTaRRtyjnt7BG5sNJwHGzCTm5QlI1TBj9PCNdM=
+			7oDxxnJboXQCAETVKYimmPLoYx99t/fp8tgbaCTLjMk=
 			</data>
 		</dict>
 		<key>Headers/QNIMPushService.h</key>
@@ -579,11 +583,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wOskdXEzcSlXH/1s7VyC0RYxRTU=
+			jR0cZoZ9zKsdy+ANcMAGuM+FbQA=
 			</data>
 			<key>hash2</key>
 			<data>
-			j5MQ8VFQ40l98f5xsJ88gVjlCCjJwiYczlgQylNZ/9c=
+			xeiecSp5PqQwHgDGkNTIDGLLxEu28O1gsFVBoLRlft0=
 			</data>
 		</dict>
 		<key>Headers/QNIMUserServiceProtocol.h</key>
